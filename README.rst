@@ -2,15 +2,16 @@ Python obscene words filter.
 
 ---------------
 
-|python| |pypi| |travis| |coveralls| |license|
+|python| |pypi| |license|
 
 ---------------
 
 
 This is ultra simple words filter, based on regular expressions.
-It is build on regular expressions and primary target is Russian language.
+It is built on regular expressions, with Russian language support from the box.
 
-It may work with your language too.
+It may work with your language too (if you will write your own regular
+expressions).
 
 Before using in production, you should test it, because there are
 no swear words filter in the world that does well filtering,
