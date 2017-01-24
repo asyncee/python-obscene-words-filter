@@ -56,7 +56,7 @@ def build_bad_phrase(*symbols, **kwargs):
     Фраза возвращается в виде группы.
     """
     variants_func = kwargs.get('variants_func', ru_variants_of_letter)
-    separator = '(?:\s|[^а-я])*'  # non-capturing group
+    separator = '(?:[^а-я])*'  # non-capturing group
 
     if len(symbols) == 1:
         symbols = symbols[0].split()
