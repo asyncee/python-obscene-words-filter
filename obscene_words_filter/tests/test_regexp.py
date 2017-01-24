@@ -20,7 +20,7 @@ def test_variants_of_letter():
 def test_build_bad_phrase_from_tuple():
     cases = {
         ('п', 'еи', 'з',
-         'д'): r'[а-я]*([пnp]+(?:\s|[^а-я])*[е3e|иiy]+(?:\s|[^а-я])*[з3z|ts]+(?:\s|[^а-я])*[дgd]+)[а-я]*',
+         'д'): r'[а-я]*([п]+(?:[^а-я])*[е|и]+(?:[^а-я])*[з]+(?:[^а-я])*[д]+)[а-я]*',
     }
     for k, v in cases.items():
         assert p.build_bad_phrase(*k) == v
@@ -28,7 +28,7 @@ def test_build_bad_phrase_from_tuple():
 
 def test_build_bad_phrase_from_string():
     cases = {
-        'п еи з д': r'[а-я]*([пnp]+(?:\s|[^а-я])*[е3e|иiy]+(?:\s|[^а-я])*[з3z|ts]+(?:\s|[^а-я])*[дgd]+)[а-я]*',
+        'п еи з д': r'[а-я]*([п]+(?:[^а-я])*[е|и]+(?:[^а-я])*[з]+(?:[^а-я])*[д]+)[а-я]*',
     }
     for k, v in cases.items():
         assert p.build_bad_phrase(k) == v

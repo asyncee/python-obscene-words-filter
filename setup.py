@@ -31,7 +31,7 @@ for dirpath, dirnames, filenames in os.walk(package_name):
 
 setup(
     name="python-obscene-words-filter",
-    version="0.1.4",
+    version="0.1.5",
     packages=find_packages(),
     author="asyncee",
     description="Obscene words filter for python, built on regexp for Russian language.",
