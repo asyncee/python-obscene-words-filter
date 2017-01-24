@@ -1,0 +1,4 @@
+.cache/
+*.pyc
+__pycache__/
+.coverage
