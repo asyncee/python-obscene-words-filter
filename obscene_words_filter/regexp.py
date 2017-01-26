@@ -7,7 +7,7 @@ from functools import partial
 
 alphabet_ru = {
     'а': 'а',
-    'б': 'б',
+    'б': 'б6',
     'в': 'в',
     'г': 'г',
     'д': 'д',
