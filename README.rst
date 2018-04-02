@@ -25,14 +25,14 @@ Quickstart
 
 Sample code::
 
-    from obscene_word_filter.default import get_default_filter
+    from obscene_words_filter.default import get_default_filter
 
     f = get_default_filter()
 
 Or::
 
-    from obscene_word_filter import conf
-    from obscene_word_filter.words_filter import ObsceneWordsFilter
+    from obscene_words_filter import conf
+    from obscene_words_filter.words_filter import ObsceneWordsFilter
 
     f = ObsceneWordsFilter(conf.bad_words_re, conf.good_words_re)
 
