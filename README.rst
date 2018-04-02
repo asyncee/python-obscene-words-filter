@@ -8,16 +8,13 @@ Python obscene words filter.
 
 
 This is ultra simple words filter, based on regular expressions.
-It is built on regular expressions, with Russian language support from the box.
-
-It may work with your language too (if you will write your own regular
-expressions).
+It is built on regular expressions, with Russian language support out of the box.
 
 Before using in production, you should test it, because there are
 no swear words filter in the world that does well filtering,
-so the quality is not 100%.
+so the quality is not 100%. But test coverage is :)
 
-But test coverage is :)
+Also it can eat CPU.
 
 
 Quickstart
